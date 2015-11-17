@@ -21,7 +21,7 @@ public class Splash extends Activity{
             public void run() {
                 finish();
 
-                Intent intent = new Intent("ServiceStarter");
+                Intent intent = new Intent();
                 intent.setClass(Splash.this, MainActivity.class);
                 startActivity(intent);
             }
