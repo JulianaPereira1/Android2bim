@@ -10,8 +10,8 @@ public class ServiceStarter extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         if (intent.getAction().equalsIgnoreCase(Intent.ACTION_BOOT_COMPLETED)) {
-            Intent serviceIntent = new Intent(context, Splash.class);
-            context.startActivity(serviceIntent);
+            Intent serviceIntent = new Intent();
+            context.startService(serviceIntent);
         }
     }
 }

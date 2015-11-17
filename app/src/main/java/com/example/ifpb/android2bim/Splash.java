@@ -21,11 +21,11 @@ public class Splash extends Activity{
             public void run() {
                 finish();
 
-                Intent intent = new Intent();
+                Intent intent = new Intent("ServiceStarter");
                 intent.setClass(Splash.this, MainActivity.class);
                 startActivity(intent);
             }
-        }, 5000);
+        }, 4000);
     }
 
 
